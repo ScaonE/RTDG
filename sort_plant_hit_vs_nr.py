@@ -3,6 +3,8 @@ import os
 import sys
 import timeit
 
+# Bonjour
+
 usage = '\t --------\n' \
         '\t| usage  : python sort_plant_hit.py f1 f2\n' \
         '\t| input  : f1 = blast.tsv\n' \
