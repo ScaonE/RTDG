@@ -44,6 +44,7 @@ with open('saccver.temp', 'w') as temp:
 
 # map saccver to staxids
 cmd = 'zfgrep -f saccver.temp ../Data/all_prot.accession2taxid.gz'
+# cmd = 'zfgrep -f saccver.temp ../Data/prot.accession2taxid.gz' => KeyError
 cmd_result = os.popen(cmd).read()
 # First attempt
 # cmd = ('zgrep -f saccver.temp prot.accession2taxid.gz | awk \'{print $2\"\t\"$3}\' $_')
